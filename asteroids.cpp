@@ -55,7 +55,6 @@ extern struct timespec timeStart, timeCurrent;
 extern double timeDiff(struct timespec *start, struct timespec *end);
 extern void timeCopy(struct timespec *dest, struct timespec *source);
 extern void showName();
-extern void drawBox(int, int);
 
 //-----------------------------------------------------------------------------
 
@@ -743,7 +742,6 @@ void render()
 	glClear(GL_COLOR_BUFFER_BIT);
 	//
 	showName();
-	drawBox(gl.xres/2 , gl.yres/2);
 	r.bot = gl.yres - 20;
 	r.left = 10;
 	r.center = 0;

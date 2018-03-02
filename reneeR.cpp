@@ -17,7 +17,7 @@ void showName()
 void drawBox(int x, int y)
 {
 	static float angle = 0.0;
-// r, g, b
+// r, g, b 
 	glColor3ub(150, 0, 250);
 	glPushMatrix();
 	glTranslatef(x, y, 0);
